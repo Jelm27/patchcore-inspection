@@ -30,7 +30,7 @@ class FaissNN(object):
         if self.on_gpu:
             # For the non-gpu faiss python package, there is no GpuClonerOptions
             # so we can not make a default in the function header.
-            return faiss.index_cpu_to_gpu(
+            return faiss.index_cpu_to_all_gpus(
                 faiss.StandardGpuResources(), 0, index, self._gpu_cloner_options()
             )
         return index
