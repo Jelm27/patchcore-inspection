@@ -111,6 +111,7 @@ def run(methods, results_path, gpu, seed, save_segmentation_images):
             ]
 
             # Plot Example Images.
+            save_segmentation_images = True
             if save_segmentation_images:
                 image_paths = [
                     x[2] for x in dataloaders["testing"].dataset.data_to_iterate

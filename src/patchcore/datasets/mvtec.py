@@ -119,7 +119,7 @@ class MVTecDataset(torch.utils.data.Dataset):
 
         for classname in self.classnames_to_use:
             classpath = os.path.join(self.source, classname, self.split.value)
-            maskpath = os.path.join(self.source, classname, "ground_truth")
+            maskpath = os.path.join(self.source, classname, "ground_truth") #TODO ground_truth
             anomaly_types = os.listdir(classpath)
 
             imgpaths_per_class[classname] = {}
