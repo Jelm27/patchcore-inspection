@@ -21,7 +21,6 @@ _CLASSNAMES = [
     "transistor",
     "wood",
     "zipper",
-    "milling_cutter",
 ]
 
 IMAGENET_MEAN = [0.485, 0.456, 0.406]
